@@ -27,3 +27,20 @@ If you're making quick iterations on schema SQL **will** slow you down
 
 
 ## CAP THEOREM
+**CONSISTENCY:** Acheived by updating several nodes beofre allowing read (ALL NODES SEE SAME DATA AT THE SAME TIME).  
+
+
+**AVAILABILITY:** Every request gets response (sucess/failure) acheived by replicating data across different server.  
+
+**PARTITION TOLERANCE:** System continues to work despite message loss or partial failure. It can sustain any amount of network failure without resulting in failure of entire network. Data is sufficiently replicated across combinationof nodes or networks to keep the system up.
+
+
+
+**It is impossible for a distributed system to simultaneously provide more than two of three of the above guarantess**
+
+
+
+**We cannot build a datastore which is:**  
+**1) Continually available**  
+**2) Sequentially consistent**  
+**3) Partition failure tolerant**  
